@@ -2,8 +2,12 @@ import Head from "next/head";
 import { BiUserPlus } from "react-icons/bi";
 import Form from "@/components/form";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [visible, setVisible] = useState(false);
+  const handler = () => setVisible;
+
   return (
     <section>
       <Head>
@@ -29,7 +33,7 @@ export default function Home() {
           </div>
         </div>
         <div className="container mx-auto py-5">
-          <Form></Form>
+          {visible ? <Form></Form> : <></>}
         </div>
         {/* <div className="container mx-auto">
           <Table></Table>
