@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { BiUserPlus } from "react-icons/bi";
+import Form from "@/components/form";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,6 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="py-10">
+        <h1>
+          <Link href="/test">test</Link>
+        </h1>
         <h1 className="text-xl md:text-5xl text-center font-bold py-10">
           Employee Management
         </h1>
@@ -23,6 +28,12 @@ export default function Home() {
             </button>
           </div>
         </div>
+        <div className="container mx-auto py-5">
+          <Form></Form>
+        </div>
+        {/* <div className="container mx-auto">
+          <Table></Table>
+        </div> */}
       </main>
     </section>
   );
