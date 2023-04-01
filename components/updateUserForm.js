@@ -1,5 +1,5 @@
 import { useReducer, useState } from "react";
-import { BiPlus } from "react-icons/bi";
+import { BiBrush } from "react-icons/bi";
 import Success from "./success";
 import Bug from "./bug";
 
@@ -95,9 +95,9 @@ export default function UpdateUserForm() {
         </div>
       </div>
       <button className="flex justify-center text-md w-2/6 bg-green-500 text-white px-4 py-2 border rounded-md hover:bg-gray-50 hover:border-green-500 hover:text-green-500">
-        Add
+        Update
         <span className="px-1">
-          <BiPlus size={24} />
+          <BiBrush size={24} />
         </span>
       </button>
     </form>
